@@ -1,0 +1,51 @@
+<div class="lightbox_content">
+    <h1>About Authorship Attribution</h1>
+    <p>Authorship attribution describes a range of mathematical / computational approaches
+    to compare a piece of writing to two or more candidates and determine the most probable author.</p>
+
+    <p>Authorship attribution predates computers, but computation has made many methods
+    more viable, as they were historically time consuming and prone to human error.</p>
+
+    <p>Modern attempts to detect authorial identity have focused on a several different strategies
+    for distinguishing between candidates, such as lexical richness, function words, and machine learning strategies.</p>
+
+    <p>Burrows measure of authorship attribution is based upon comparing the frequencies of top words in candidate text to the frequencies of top words in a disputed text.
+    It has been described as both statistically transparent and highly effective (Hoover, 2004).
+    Burrows Delta is not strictly a function word test but assigned high value to function words,
+    as they tend to be the most frequent terms in a document.</p>
+
+    <div class="lightbox_delta" id="delta_diagram"></div>
+
+    <p>Burrows' Delta has been refined in several ways since its inception, but the authorship attribution method has consistently involved the following:</p>
+
+    <ol>
+    <li>Creating a super corpus of word frequencies in all candidates and the disputed text to derive a feature set of top words.</li>
+    <li>Calculating mean frequencies for all words for each text.</li>
+    <li>Calculating standard deviations for word frequencies across all texts.</li>
+    <li>Converting frequencies to Z-scores, using mean frequency and standard deviation for the word in the super corpus.</li>
+    <li>Comparing candidate Z-scores to derive Z-differences for each word.</li>
+    <li>Computing a mean Z-difference for each candidate text, which measures textual similarity to a disputed text in standard deviations,
+    the lower Delta representing the predicted author (Burrows, 2002).</li>
+    </ol>
+
+    <p>The math behind the test can be a bit dizzying to a layman, but these are very simple concepts to a mathematician.
+    We're essentially making a list of terms, and comparing term frequencies among candidate 1, candidate 2, and the disputed text.
+    We use Z-scores instead of raw frequencies to compare texts because we want to know whether the differences between frequencies is large
+    or small based upon the rest of the data. (For a more detailed explanation of Delta, see Burrows, 2022 or Hoover, 2004.)</p>
+
+    <p>For example, if I measure two soccer players' height at 5'6" and 5'10", I can easily see that
+    the second person is four inches taller but, in order to determine whether that height difference is a big difference or a small one
+    for the entire soccer league, I need to know the mean height for the league, as well as the standard deviation for those heights.
+    If the average height of a soccer league is 5'8" and there are lots of people in the 5'6" to 5'10" range, the difference is less
+    meaningful than a soccer league where the average height is 5'4" and only 5 percent of players are taller 5'8".
+    (Thanks to my former student Alex Gladwin for help with this analogy!) </p>
+
+    <p><blockquote>From Investopedia: "A Z-Score is a statistical measurement of a score's relationship to the mean in a group of scores.
+    A Z-score of 0 means the score is the same as the mean. A Z-score can also be positive or negative, indicating whether it is above or below
+    the mean and by how many standard deviations." </blockquote>
+    </p>
+
+    <p>With any authorship attribution methods, it's important to note that these measure cannot prove authorship. Rather, each test describes
+    textual similarities that often <em>correlate</em> with authorial identity. A text is influenced by various factors such as author, time period,
+    genre, and region, and each factor produces a statistical 'signal'. That said, the authorship signal is by far the strongest of these signals.</p>
+    </div>

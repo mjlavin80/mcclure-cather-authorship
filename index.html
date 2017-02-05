@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Comparing Style: Cather, McClure, and <em>My Autobiography</em></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- STYLESHEET -->
+	<link rel="stylesheet" type="text/css" href="poster.css" />
+        <link rel="stylesheet" type="text/css" href="colorbox.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='./scripts/colorbox-master/jquery.colorbox.js'> </script>
+
+<script>
+
+    $(document).ready(function(){
+            $("#design").colorbox({width:"50%", height:"40%"});
+	    $("#background").colorbox({width:"50%", height:"40%"});
+	    $("#authorship").colorbox({width:"50%", height:"40%"});
+	    $("#tables").colorbox({width:"80%", height:"80%"});
+	    $("#figures").colorbox({width:"80%", height:"80%"});
+    });
+</script>
+</head>
+<body>
+<div class="container">
+<div class="thirds" id="far_left">
+<div class="heading"><h1>Comparing Style: <br/>Cather, McClure, and <em>My Autobiography</em></h1>
+<h2>Matthew J. Lavin</h2>
+</div>
+<div class="one_third_fill_content">
+    <h4>Cather as Ghostwriter</h4>
+    <div class='img' id='graves'></div>
+<p><a id="background" href="background.html">Click for background information</a></p>
+</div>
+
+<div class="one_third_fill_content"><h4>About Authorship Attribution</h4>
+<div class="tagul">
+<script src="http://cdn.tagul.com/embed/wfzmsx3gno7t"></script>
+<!-- Please don't remove attribution to Tagul.com -->
+<div style="display: table; margin: 0 auto;"><a href="http://tagul.com/">Created with Tagul.com</a></div>
+</div>
+<div class="scroller"><p class="caption" id="main_caption">Authorship attribution describes a range of mathematical / computational approaches to compare a piece of writing to two or more candidates and determine the most probable author ...</p>
+<p><a id="authorship" href="authorship.html">Click for details</a></p>
+</div>
+</div>
+
+<div class="one_third_fill_content" id="bottom">
+    <h4>Study Design</h4>
+<div class="grid_frame">
+<table class="grid">
+<tr>
+    <td>Text Preparation: All text lowercase, punctuation removed, html stripped</td>
+    <td>Authorship Test: Burrows Delta</td>
+
+
+</tr>
+<tr>
+    <td class="primary">Texts Compared: Various Cather, McClure's "Obstacles to Peace', serial and book versions of <em>My Autobiography</em></td>
+    <td class="primary">Settings: 60 most frequent words, with and without culling, length-normalized candidate samples, bootstrapping</td>
+</tr>
+</table>
+<p><a id="design" href="design.html">Click for details</a></p>
+</div>
+</div>
+</div>
+
+<div class="thirds">
+<div class="fill_content">
+<h4>Test Results</h4>
+<div class="result_figure">
+<div id="primary_figure"></div>
+</div>
+<p class="caption" id="main_caption">Fig. 1: Margins of difference, <em>Obstacles to Peace</em>
+vs. various Cather, by serial installment, top words considered if present in 1, 2, or 3 documents (i.e. culling=0).
+Higher on the graph = Cather won the head-to-head by a larger margin.</p>
+<div>
+<p><a id="figures" href="figures.html">View all figures</a></p>
+</div>
+<div class="result_table_div">
+    <table class="result_table_main">
+    <tbody>
+	<tr>
+	<td>id</td>
+	<td>Disputed 1</td>
+	<td>Disputed 2</td>
+	<td>McClure</td>
+	<td>Cather</td>
+	<td>margin</td>
+	<td>winner</td>
+	<td>disputed text</td>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>obstacles to peace</td>
+	<td>training for ballet</td>
+	<td>0.506551636</td>
+	<td>0.141315185</td>
+	<td>0.365236451</td>
+	<td>training for ballet</td>
+	<td>my autobio serial</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>obstacles to peace</td>
+	<td>antonia</td>
+	<td>0.355225468</td>
+	<td>0.067841993</td>
+	<td>0.287383476</td>
+	<td>antonia</td>
+	<td>my autobio serial</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>obstacles to peace</td>
+	<td>lucy gayheart</td>
+	<td>0.636626529</td>
+	<td>0.363567934</td>
+	<td>0.273058595</td>
+	<td>lucy gayheart</td>
+	<td>my autobio serial</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>obstacles to peace</td>
+	<td>prof house</td>
+	<td>0.406343431</td>
+	<td>0.17352408</td>
+	<td>0.232819351</td>
+	<td>prof house</td>
+	<td>my autobio serial</td>
+	</tr>
+	<tr>
+	<td>5</td>
+	<td>obstacles to peace</td>
+	<td>obscure destinies</td>
+	<td>0.547219295</td>
+	<td>0.32615333</td>
+	<td>0.221065965</td>
+	<td>obscure destinies</td>
+	<td>my autobio serial</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>obstacles to peace</td>
+	<td>o pioneers</td>
+	<td>0.416266453</td>
+	<td>0.201626078</td>
+	<td>0.214640375</td>
+	<td>o pioneers</td>
+	<td>my autobio serial</td>
+	</tr>
+    </tbody></table>
+</div>
+    <p class="caption" id="main_caption">Table 1: Data for top six margins of victory, in head-to-head comparisons of <em>Obstacles to Peace</em>
+    and various Cather vs. serial version of <em>My Autobiography</em>, top words considered if present in 1, 2, or 3 documents (i.e. culling=0).
+    Lower score = more similar to <em>My Autobiography</em>.</p>
+
+	<p><a id="tables" href="tables.html">View all data results as html tables</a></p>
+        <p><a href="data/lavin-data.zip">Download data as bundle (.zip) of .csv files</a></p>
+
+</div>
+</div>
+<div class="thirds">
+    <div class="two_thirds_fill_content"><h4>Summary and Interpretation</h4>
+	<div class="interp">
+	    On the surface, the results of this study are quite clear, yet they may also suggest some deeper implications. To summarize:
+	<ul>
+	    <li>For book serial as a whole, Cather wins 24 head-to-heads, McClure wins none.</li>
+	    <li>In one test for installment 8 and two tests for installments 2, 4 and 6 , McClure beats Cather's "Three American Singers." These are McClure's only victories in the entire set.</li>
+	    <li>Cather texts of various genres, dates, and lengths win over <em>Obstacles to Peace</em>.</li>
+	    <li>Results hold true for serial and books version, using culling=0 and culling=100.</li>
+	    <li>Mean margins of victory for book version are slightly smaller than magazine version, but not significant enough to link to any edits.</li>
+	    <li>Cather's "Training for the Ballet," <em>My Antonia</em>, <em>The Professor's House</em>, and <em>Obscure Destinies</em>
+	    rank in the top six margins of victory for all tests.</li>
+	    <li>Cather's <em>Lucy Gayheart</em> and "Plays of Real Life" rank in the top six margins of victory in two tests respectively.</li>
+	</ul>
+	</div>
+
+	<p class="interp">Cather's consistent victory in head-to-heads is not necessarily surprising, as biographical and archival research has long suggested that McClure supplied subject matter for
+	his autobiography, whereas Cather was the only person known to have put pen to paper for the serial version.</p>
+
+	<p class="interp">Further, for these tests, any changes McClure made to the book version of the autobiography were not extensive enough to swing
+	authorship attribution results toward his signal.</p>
+
+	<div class="block_div">
+	<table class=mean_margin>
+	<tbody>
+	<th class="dark">Tests</th>
+	<th class="dark">Mean</th>
+	<th class="dark">Absolute Difference</th>
+	</tr><tr>
+	<td>Book, no cull</td>
+	<td>0.1659222</td>
+	<td rowspan="2">0.01024246</td>
+
+	</tr>
+	<tr>
+	<td>Serial, no cull</td>
+	<td>0.1761647</td>
+
+	</tr>
+	<tr>
+	<td>Book, cull 100</td>
+	<td> 0.1625078</td>
+	<td rowspan="2">0.008458941</td>
+
+	</tr>
+	<tr>
+	<td>Serial, cull 100 </td><td> 0.1709667</td>
+
+
+	</tr>
+	</tbody>
+	</table>
+
+    <div class="next_to_margin"><p class="interp">The mean margin of victory for the serial version vs. the book version, however, shows traces of a
+    slight bend toward McClure, but the absolute differences of these margins are too small to attribute this bend to McClure's edits to the book version.</p>
+    </div>
+
+    </div>
+
+	<div class="block_div"><p class="interp">Finally, this approach creates similarity rankings among various texts by Cather, and it's highly suggestive (and well worth further investigation) that
+	<em>My Antonia</em> and <em>The Professor's House</em> so demonstrably and consistently rank similar to <em>My Autobiography</em>, especially when we consider
+	the way she connected <em>My Antonia</em>, in various letters, to her ghostwriting experience, as well as the thematic and structural links
+	of both novels to the first-person voice of a male narrator for McClure's autobiography.</p></div>
+    </div>
+
+    <div class="one_third_fill_content" id="bottom"><h4>Next Steps</h4>
+    <p class="next">The biggest limitation of this study is its dependence on McClure's <em>Obstacles to Peace</em>. McClure authored very few texts,
+    but some of his personal letters could be transcribed and analyzed using these methods. Cather's letters should be added to the comparison to create analytical parity.</p>
+    <p class="next">Although the correction methods I used are reliable, the impact of additional hand correction should be considered.</p>
+    <p class="next">Additional study should be conducted to account for McClure's victory over "Three American Singers" in some cases.</p>
+    <p class="next">I plan to do similar testing on <em>The Life of Mary Baker G. Eddy and the History of Christian Science</em>.</p>
+    </div>
+</div>
+
+<div class="footer"><div class="fill_content"><h4>Works Cited and Consulted</h4>
+<div class="biblio">
+<p>Burrows, John. "'Delta': a Measure of Stylistic Difference and a Guide to Likely Authorship." <em>Literary and Linguistic Computing</em> (<em>LLC</em>)  17.3 (2002): 267-287.</p>
+
+<p>Clark, Graves Glenwood. "The Ghost Writer and His Story." <em>The Editor</em> 52. 4 (February 1920): 145-147.</p>
+
+<p>Hoover, David. "Testing Burrows's Delta." <em>Literary and Linguistic Computing</em> (<em>LLC</em>) 19.4 (2004): 453-475.</p>
+
+<p>Lavin, Matthew. "Reciprocity and the 'Real' Author: Willa Cather as S.S. McClure's Ghostwriter." Forthcoming from <em>Auto|Biography Studies</em>.</p>
+
+<p>Gladwin, Alexander, Lavin, Matthew, and Look, Daniel. "Stylometry and Collaborative Authorship: Eddy, Lovecraft, and 'The Loved Dead'."
+Forthcoming from <em>Journal of Digital Scholarship</em> (formerly <em>Literary and Linguistic Computing</em> (<em>LLC</em>)).</p>
+<p>Mooney, Christopher Z., and Duval, Robert D. <em>Bootstrapping: A Nonparametric Approach to Statistical Inference</em>. Newbury Park, CA: Sage, 1993.</p>
+<p>O'Brien, Sharon. <em>Willa Cather: The Emerging Voice</em>. Cambridge: Harvard University Press, 1997.</p>
+
+<p>Thacker, Robert. "'It's Through Myself That I Knew and Felt Her': S. S. McClure's My Autobiography and the Development of Willa Cather's Autobiographical Realism."
+<em>American Literary Realism</em> 33.2 (2001): 123-142.</p>
+
+<p>Williams, Deborah Lindsey. "Hiding in Plain Sight: Willa Cather and Ghost Writing." <em>Willa Cather Pioneer Memorial Newsletter and Review</em> 43 (1999): 25-31.</p>
+
+<p>"Z-Scores," Investopedia.com.</p>
+
+<p>Zitter, Emmy Stark. "Making Herself Born: Ghost Writing and Willa Cather's Developing Autobiography." <em>Biography</em> 19.3 (1996): 283-301.</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
